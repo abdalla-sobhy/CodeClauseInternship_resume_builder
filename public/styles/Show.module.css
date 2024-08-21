@@ -22,9 +22,4 @@ body{
     align-items: center;
     gap: 4rem;
     background-color: #EBECF0;
-    /* background-image: url("/public/assets/login_background.jpg");
-    background-position: center;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
