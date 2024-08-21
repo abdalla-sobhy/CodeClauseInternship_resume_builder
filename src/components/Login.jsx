@@ -4,6 +4,8 @@ import { useLogin, useRegister } from "/src/hooks/user.js";
 
 export default function Login() {
 
+  const [bottomError, setBottomError] = useState()
+
   const [errors,setErrors] = useState({
     usernameError : '',
     passwordError : ''
@@ -48,6 +50,9 @@ export default function Login() {
 
     try {
       await handleUseLogin(form);
+      if(loginErrors.message){
+        setBottomError(loginErrors.message)
+      }
       if( loginErrors.username){
         setErrors(oldvalues => {
           return{
@@ -81,6 +86,10 @@ export default function Login() {
 
     try {
       await handleUseRegister(form);
+      console.log(registerErrors)
+      if( registerErrors && registerErrors.message){
+        setBottomError(registerErrors.message)
+      }
       if( registerErrors.username){
         setErrors(oldvalues => {
           return{
@@ -169,9 +178,9 @@ export default function Login() {
                 </button>
               </div>
               <div className={LoginCSS.userNotFound}>
-                {(loginErrors || registerErrors) && (
+                {bottomError && (
                   <p>
-                    {loginErrors?.message || registerErrors?.message}
+                    {bottomError}
                   </p>
                 )}
               </div>

@@ -42,6 +42,7 @@ export const registerUser = async (data) => {
       let errorMessage = { message: "Unexpected Error Occurred" };
       try {
         const errorData = await response.json();
+        console.log(errorData)
         errorMessage =
           errorData.errors || { message: errorData.message } || errorMessage;
       } catch (jsonError) {
@@ -132,7 +133,6 @@ export async function getTemplate(id){
       throw errorMessage;
     }
     const responseData = await response.json()
-    console.log(responseData)
     return responseData
   } catch (error) {
     console.log(error)
@@ -157,7 +157,6 @@ export async function deleteResume(id){
       throw errorMessage
     }
     const responseData = await response.json()
-    console.log(responseData)
     return responseData
   } catch (error) {
     console.log(error)
@@ -184,7 +183,6 @@ export async function editResume(form) {
       throw errorMessage
     }
     const responseData = await response.json()
-    console.log(responseData)
     return responseData
   } catch (error) {
     console.log(error)
