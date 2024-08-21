@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+#root{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    flex-direction: column;
+    padding: 0 !important;
+    max-width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.page{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url("/public/assets/login_background.jpg");
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5%;
+    gap: 4rem;
+    height: 76%;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+.section{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.last_section{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    /* font-weight: bold; */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.swiper-container{
+    height: 7rem;
+}
+.swiper_slide{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 6rem !important;
+    padding-bottom: 2rem !important;
+    height: 5rem !important;
+}
+.swiper_slide span{
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 30px #9af8f3;
+    cursor: pointer;
+}
+.man_with_laptop_div{
+    width: 63%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 30px #9af8f3;
+}
+.man_with_laptop_div img{
+    height: 100%;
+    width: 100%;
+}
+.succssfull_man_div{
+    width: 63%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 80px #737A8C;
+}
+.succssfull_man_div img{
+    height: 100%;
+    width: 100%;
+}

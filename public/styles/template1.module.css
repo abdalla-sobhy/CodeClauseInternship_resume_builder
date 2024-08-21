@@ -1,0 +1,196 @@
+.template{
+    height: fit-content;
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+.template_contents{
+    height: fit-content;
+    width: 100%;
+}
+.leftBar{
+    width: 30%;
+    background-color: #163853;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: white;
+}
+.form{
+    margin-left: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+.leftBar h1{
+    font-weight: bold;
+}
+.leftBar hr{
+    border-width: 0.1rem;
+    border-color: white;
+    width: 85%;
+}
+.section{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+.last_right_section{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+img{
+    width: 23px;
+}
+.emailIcon{
+    width: 30px;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.left_input_field{
+    background-color: transparent;
+    color: white;
+    width: 73%;
+}
+.left_input_field_education{
+    background-color: transparent;
+    color: white;
+    width: 90%;
+    font-size: 2rem;
+}
+.left_input_field_education::placeholder{
+    color: white;
+    font-size: 2rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skills_info{
+    margin-left: 2rem;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+ul li{
+    list-style-type: disc;
+}
+.rightPart{
+    width: 70%;
+    height: 100%;
+}
+.rightPart_contents{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.name_input_field{
+    background-color: transparent;
+    color: #545454;
+    width: 100%;
+    font-size: 4rem;
+}
+.name_input_field::placeholder{
+    color: #545454;
+    font-size: 4rem;
+}
+.jobTitle_input_field{
+    background-color: transparent;
+    color: #545454;
+    width: 100%;
+    font-size: 3rem;
+}
+.jobTitle_input_field::placeholder{
+    color: #545454;
+    font-size: 3rem;
+}
+.nameAndJob{
+    margin-top: 5rem;
+    margin-left: 7rem;
+    padding-bottom: 3rem;
+}
+.profile{
+    resize: none;
+    height: 10%;
+    background: transparent;
+    width: 95%;
+}
+.profile::placeholder{
+    color: black;
+    font-size: 1.5rem;
+}
+.company_input_field{
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    font-size: 2rem;
+}
+.company_input_field::placeholder{
+    color: black;
+    font-size: 2rem;
+}
+.position_input_field{
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    font-size: 2rem;
+    margin-top: -2rem;
+}
+.position_input_field::placeholder{
+    color: black;
+    font-size: 2rem;
+}
+.refrence_number{
+    margin-top: -1.5rem;
+}
+.refrence_number_input_field{
+    background-color: transparent;
+    color: black;
+    width: 25%;
+    margin-left: 1rem;
+}
+.refrence_number_input_field::placeholder{
+    color: black;
+}
+hr{
+    border-width: 0.1rem;
+    border-color: black;
+    width: 85%;
+}
+.insideForm{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 74px gray;
+    border-width: 4px;
+    border-color: black;
+}
+.submitButton{
+    width: 8%;
+}
+.deleteAndEditDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
