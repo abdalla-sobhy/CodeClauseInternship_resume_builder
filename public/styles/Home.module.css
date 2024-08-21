@@ -29,11 +29,6 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* background-image: url("/public/assets/login_background.jpg");
-    background-position: center;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 .body{
     display: flex;
